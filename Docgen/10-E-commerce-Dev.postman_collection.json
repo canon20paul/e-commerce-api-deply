@@ -1,0 +1,646 @@
+{
+	"info": {
+		"_postman_id": "ad6e98cc-9728-45d5-95fc-0258086fc117",
+		"name": "10-E-commerce-Dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23803818"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"linda\",\r\n    \"email\":\"linda@gmail.com\",\r\n    \"password\":\"secret\"   \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/register",
+							"host": [
+								"http://localhost:5000"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"paul@gmail.com\",\r\n    \"password\":\"secret\"   \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/login",
+							"host": [
+								"http://localhost:5000"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/auth/logout",
+							"host": [
+								"http://localhost:5000"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checking for login and cookies status after LOGIN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000",
+							"host": [
+								"http://localhost:5000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/users/",
+							"host": [
+								"http://localhost:5000"
+							],
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/637dcd19bbe8f74c3aac4c54",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"637dcd19bbe8f74c3aac4c54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show current user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/showMe",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"showMe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update  User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"paul@gmail.com\",\r\n    \"name\": \"Paul\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users/updateUser",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update User Password",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newPassword\": \"secret\",\r\n    \"oldPassword\": \"newsecret\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/users/updateUserPassword",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"updateUserPassword"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get all Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/products",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"OFFICE TABLE\",\r\n    \"description\": \"OFFICE TABLE\",\r\n    \"category\": \"office\",\r\n    \"company\": \"ikea\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/products",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"OFFICE TABLE\",\r\n    \"price\": \"26999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/products/638d66cb1bed52784e21bd6b",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								"638d66cb1bed52784e21bd6b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/products/63819ef01a73ee3358af941b",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								"63819ef01a73ee3358af941b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/products/63898bc4ddc95e9fb7e387ac",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								"63898bc4ddc95e9fb7e387ac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Documents/07-file-upload/images/computer-6.jpeg"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/products/uploadImage",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								"uploadImage"
+							],
+							"query": [
+								{
+									"key": "image",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Product Reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/products/63819f061a73ee3358af941f/reviews",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"products",
+								"63819f061a73ee3358af941f",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{URL}}/uploads/example.jpeg",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/uploads/example.jpeg",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"uploads",
+								"example.jpeg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{URL}}/uploads/example.jpeg",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/uploads/example.jpeg",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"uploads",
+								"example.jpeg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "createReview",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"product\": \"638abc43c148fa9de2289864\",\r\n\"rating\":1,\r\n\"title\": \"bad Product\",\r\n\"comment\":\"very, very bad product\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/reviews/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reviews",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reviews/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reviews",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Single review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reviews/6385703c8d410651c073a236",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reviews",
+								"6385703c8d410651c073a236"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Review",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rating\":\"2\",\r\n    \"title\":\"lllllllllllllllllllllll\",\r\n    \"comment\":\"MAMA MIYA MAAMAMA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/reviews/638712dfed4243f25761e774",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reviews",
+								"638712dfed4243f25761e774"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/reviews/6385b802aaa8774497c71feb",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reviews",
+								"6385b802aaa8774497c71feb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "createOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tax\": 399,\r\n    \"shippingFee\": 499,\r\n    \"items\": [\r\n      {\r\n        \"name\": \"accent chair\",\r\n        \"price\": 2599,\r\n        \"image\": \"https://dl.airtable.com/.attachmentThumbnails/e8bc3791196535af65f40e36993b9e1f/438bd160\",\r\n        \"amount\": 34,\r\n        \"product\": \"638d66cb1bed52784e21bd6b\"\r\n      },\r\n        {\r\n        \"name\": \"bed\",\r\n        \"price\": 2699,\r\n        \"image\": \"https://dl.airtable.com/.attachmentThumbnails/e8bc3791196535af65f40e36993b9e1f/438bd160\",\r\n        \"amount\": 3,\r\n        \"product\": \"638abc43c148fa9de2289864\"\r\n      }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/orders/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/orders",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Current User Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/orders/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/orders/638d5ea5a1763a43cb0f0fc1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"orders",
+								"638d5ea5a1763a43cb0f0fc1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paymentIntentId\": \"soneRandomId\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/orders/123",
+							"host": [
+								"http://localhost:5000"
+							],
+							"path": [
+								"orders",
+								"123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

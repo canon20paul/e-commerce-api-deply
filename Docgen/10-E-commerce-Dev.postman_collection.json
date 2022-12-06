@@ -24,9 +24,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/auth/register",
+							"raw": "https://e-commerce-api-canon.cyclic.app//auth/register",
 							"host": [
-								"http://localhost:5000"
+								"https://e-commerce-api-canon.cyclic.app/"
 							],
 							"path": [
 								"auth",
@@ -51,9 +51,9 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/auth/login",
+							"raw": "https://e-commerce-api-canon.cyclic.app//auth/login",
 							"host": [
-								"http://localhost:5000"
+								"https://e-commerce-api-canon.cyclic.app/"
 							],
 							"path": [
 								"auth",
@@ -69,9 +69,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/auth/logout",
+							"raw": "https://e-commerce-api-canon.cyclic.app//auth/logout",
 							"host": [
-								"http://localhost:5000"
+								"https://e-commerce-api-canon.cyclic.app/"
 							],
 							"path": [
 								"auth",
@@ -87,9 +87,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000",
+							"raw": "https://e-commerce-api-canon.cyclic.app/",
 							"host": [
-								"http://localhost:5000"
+								"https://e-commerce-api-canon.cyclic.app/"
 							]
 						}
 					},
@@ -106,9 +106,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/users/",
+							"raw": "https://e-commerce-api-canon.cyclic.app//users/",
 							"host": [
-								"http://localhost:5000"
+								"https://e-commerce-api-canon.cyclic.app/"
 							],
 							"path": [
 								"users",
@@ -124,9 +124,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/users/637dcd19bbe8f74c3aac4c54",
+							"raw": "https://e-commerce-api-canon.cyclic.app/users/637dcd19bbe8f74c3aac4c54",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"users",
@@ -142,9 +142,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/users/showMe",
+							"raw": "https://e-commerce-api-canon.cyclic.app/users/showMe",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"users",
@@ -169,9 +169,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/users/updateUser",
+							"raw": "https://e-commerce-api-canon.cyclic.app/users/updateUser",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"users",
@@ -196,9 +196,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/users/updateUserPassword",
+							"raw": "https://e-commerce-api-canon.cyclic.app/users/updateUserPassword",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"users",
@@ -219,9 +219,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/products",
+							"raw": "https://e-commerce-api-canon.cyclic.app/products",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"products"
@@ -245,9 +245,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/products",
+							"raw": "https://e-commerce-api-canon.cyclic.app/products",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"products"
@@ -271,9 +271,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/products/638d66cb1bed52784e21bd6b",
+							"raw": "https://e-commerce-api-canon.cyclic.app/products/638d66cb1bed52784e21bd6b",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"products",
@@ -289,9 +289,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/products/63819ef01a73ee3358af941b",
+							"raw": "https://e-commerce-api-canon.cyclic.app/products/63819ef01a73ee3358af941b",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"products",
@@ -307,9 +307,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/products/63898bc4ddc95e9fb7e387ac",
+							"raw": "https://e-commerce-api-canon.cyclic.app/products/63898bc4ddc95e9fb7e387ac",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"products",
@@ -341,9 +341,9 @@
 							]
 						},
 						"url": {
-							"raw": "{{URL}}/products/uploadImage",
+							"raw": "https://e-commerce-api-canon.cyclic.app/products/uploadImage",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"products",
@@ -366,9 +366,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/products/63819f061a73ee3358af941f/reviews",
+							"raw": "https://e-commerce-api-canon.cyclic.app/products/63819f061a73ee3358af941f/reviews",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"products",
@@ -380,14 +380,14 @@
 					"response": []
 				},
 				{
-					"name": "{{URL}}/uploads/example.jpeg",
+					"name": "https://e-commerce-api-canon.cyclic.app/uploads/example.jpeg",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/uploads/example.jpeg",
+							"raw": "https://e-commerce-api-canon.cyclic.app/uploads/example.jpeg",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"uploads",
@@ -398,14 +398,14 @@
 					"response": []
 				},
 				{
-					"name": "{{URL}}/uploads/example.jpeg",
+					"name": "https://e-commerce-api-canon.cyclic.app/uploads/example.jpeg",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/uploads/example.jpeg",
+							"raw": "https://e-commerce-api-canon.cyclic.app/uploads/example.jpeg",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"uploads",
@@ -435,9 +435,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/reviews/",
+							"raw": "https://e-commerce-api-canon.cyclic.app/reviews/",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"reviews",
@@ -453,9 +453,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/reviews/",
+							"raw": "https://e-commerce-api-canon.cyclic.app/reviews/",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"reviews",
@@ -471,9 +471,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/reviews/6385703c8d410651c073a236",
+							"raw": "https://e-commerce-api-canon.cyclic.app/reviews/6385703c8d410651c073a236",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"reviews",
@@ -498,9 +498,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/reviews/638712dfed4243f25761e774",
+							"raw": "https://e-commerce-api-canon.cyclic.app/reviews/638712dfed4243f25761e774",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"reviews",
@@ -516,9 +516,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/reviews/6385b802aaa8774497c71feb",
+							"raw": "https://e-commerce-api-canon.cyclic.app/reviews/6385b802aaa8774497c71feb",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"reviews",
@@ -548,9 +548,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/orders/",
+							"raw": "https://e-commerce-api-canon.cyclic.app/orders/",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"orders",
@@ -566,9 +566,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/orders",
+							"raw": "https://e-commerce-api-canon.cyclic.app/orders",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"orders"
@@ -583,9 +583,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/orders/",
+							"raw": "https://e-commerce-api-canon.cyclic.app/orders/",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"orders",
@@ -601,9 +601,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/orders/638d5ea5a1763a43cb0f0fc1",
+							"raw": "https://e-commerce-api-canon.cyclic.app/orders/638d5ea5a1763a43cb0f0fc1",
 							"host": [
-								"{{URL}}"
+								"https://e-commerce-api-canon.cyclic.app"
 							],
 							"path": [
 								"orders",
@@ -628,9 +628,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{URL}}/orders/123",
+							"raw": "https://e-commerce-api-canon.cyclic.app/orders/123",
 							"host": [
-								"http://localhost:5000"
+								"https://e-commerce-api-canon.cyclic.app/"
 							],
 							"path": [
 								"orders",

@@ -1,7 +1,19 @@
-## Hosted Project
+# E-Commerce API  Hosted Project
 
-[E-Commerce API Heroku URL](https://e-commerce-api-10.herokuapp.com/)
+[E-Commerce API @ render.com URL](https://e-commerce-api-deply.onrender.com//)
 
+#### Simple E-commerce API with:-
+
+- [] User Registration
+- [] User Login
+- [] User Authentication and Authorization with cookies
+- [] CRUD Excution of:-
+      -> Users
+      -> Products
+      -> Reviews
+      -> Orders
+
+## Process of creating API
 #### Setup Basic Express Server
 
 - [] import express and assign to variable
@@ -355,9 +367,9 @@
 - [] express-mongo-sanitize
 - [] cors (cookies!!!!)
 
-#### Deploy on Heroku
+#### Deploy on Render.com
 
-- [] heroku account and heroku cli
+- [] Prepare project Root File
 - [] remove/copy from the main repo
 - [] add dev command "nodemon app.js"
 - [] change start to "node app.js"
@@ -369,8 +381,14 @@
 - [] git init
 - [] git add .
 - [] git commit -m "initial commit"
-- [] heroku login
-- [] heroku create "App Name"
-- [] git remote -v
-- [] setup env vars in GUI
-- [] git push heroku master/main
+- [] Render.com login / Create account with github profile preferably
+- [] Render.com create "Web service"
+- [] Create name
+- [] Build command => npm install
+- [] Start command => node app.js
+- [] Select free service
+- [] Under Advance => Add Secret File
+- [] Past details of the .env file to recreate Secret file
+- [] Create New web Service command and wait for a little while
+- [] ####COMPLETED FINALLY
+

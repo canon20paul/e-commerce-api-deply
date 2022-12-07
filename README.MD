@@ -1,6 +1,6 @@
 # E-Commerce API  Hosted Project
 
-[E-Commerce API @ render.com URL](https://e-commerce-api-deply.onrender.com//)
+[E-Commerce API @ render.com URL](https://e-commerce-api-deply.onrender.com/)
 
 #### Simple E-commerce API with:-
 
